@@ -4,6 +4,8 @@ Code accompanying the paper [Gradient-Based Meta-Learning with Learned Layerwise
 It includes code for running the experiments in the paper (few-shot sine wave regression, Omniglot and miniImagenet few-shot classification).
 
 ## Abstract
+<img src="https://github.com/yoonholee/MT-net/blob/master/mtnet-subspace.png" height="250" /><img src="https://github.com/yoonholee/MT-net/blob/master/mtnet-fig.png" height="250" />
+
 Gradient-based meta-learning methods leverage gradient descent to learn the commonalities among various tasks. While previous such methods have been successful in meta-learning tasks, they resort to simple gradient descent during meta-testing. Our primary contribution is the **MT-net**, which enables the meta-learner to learn on each layer's activation space a subspace that the task-specific learner performs gradient descent on. Additionally, a task-specific learner of an {\em MT-net} performs gradient descent with respect to a meta-learned distance metric, which warps the activation space to be more sensitive to task identity. We demonstrate that the dimension of this learned subspace reflects the complexity of the task-specific learner's adaptation task, and also that our model is less sensitive to the choice of initial learning rates than previous gradient-based meta-learning methods. Our method achieves state-of-the-art or comparable performance on few-shot classification and regression tasks.
 
 ### Data
